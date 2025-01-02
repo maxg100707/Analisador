@@ -27,7 +27,7 @@ function adicionar() {
     res.innerHTML = " ";
   } else {
     alert(
-      "vc é burro ou se faz? ou o numero é invalido ou ja ta na poha da lista"
+      "Ou o numero é invalido ou ja ta na lista"
     );
   }
   num.value = "";
@@ -36,7 +36,7 @@ function adicionar() {
 
 function finalizar() {
   if (valores.length == 0) {
-    alert("Bota numero nessa poha");
+    alert("Adicione um numero");
   } else {
     var tot = valores.length;
     var maior = valores[0];
@@ -57,10 +57,10 @@ function finalizar() {
     media = soma / tot;
 
     res.innerHTML = " ";
-    res.innerHTML += `<p>No total tem ${tot} numeros nessa lista de merda.</p>`;
-    res.innerHTML += `<p>O maior valor dessa poha é ${maior}.</p>`;
-    res.innerHTML += `<p>O menor valor dessa poha é ${menor}.</p>`;
-    res.innerHTML += `<p>A soma dessas merda tudo é ${soma}.</p>`;
-    res.innerHTML += `<p>A media dessas merda tudo é ${media}.</p>`;
+    res.innerHTML += `<p>No total tem ${tot} numeros nessa lista.</p>`;
+    res.innerHTML += `<p>O maior valor da lista é ${maior}.</p>`;
+    res.innerHTML += `<p>O menor valor é ${menor}.</p>`;
+    res.innerHTML += `<p>A soma de tudo é ${soma}.</p>`;
+    res.innerHTML += `<p>A media é ${media}.</p>`;
   }
 }
